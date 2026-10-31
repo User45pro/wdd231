@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | William Borja</title>
+    <meta name="description"
+        content="WDD 231 Web Frontend Development course home page for William Borja with the Web and Computer Programming certificate courses.">
+    <meta name="author" content="William Borja">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="William Borja site logo" width="48" height="48">
+        <span>William Borja</span>
+        <button id="menu-button" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+    </header>
+    <nav aria-label="Main navigation">
+        <ul id="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/">Chamber Project</a></li>
+            <li><a href="final/">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="grid-top">
+            <section class="card">
+                <h2>About Me</h2>
+                <p>Hello! My name is William Borja and I live in Mexico. I am studying Software Development at
+                    BYU-Idaho through BYU-Pathway Worldwide. I also work helping other students reach their academic
+                    goals, and I teach English to Spanish speakers. I enjoy learning new technologies and finding
+                    ways to use them to serve others and provide for my family.</p>
+                <p>I have already completed courses in Python, databases, and web fundamentals, and this semester I
+                    am learning C# and frontend web development. My goal is to become a professional software
+                    developer.</p>
+            </section>
+            <section class="card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.svg" alt="Portrait placeholder of William Borja" class="profile"
+                    width="220" height="220" loading="lazy">
+            </section>
+        </div>
+        <section class="card">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button type="button" id="all" class="filter active-filter">All</button>
+                <button type="button" id="cse" class="filter">CSE</button>
+                <button type="button" id="wdd" class="filter">WDD</button>
+            </div>
+            <div id="course-cards"></div>
+            <p class="credits">The total credits for courses listed above is <span id="total-credits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/User45pro" target="_blank" rel="noopener">
+                <img src="images/github.svg" alt="GitHub" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32">
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener">
+                <img src="images/twitter-x.svg" alt="X social network" width="32" height="32">
+            </a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> &bull; William Michel Borja Ornelas &bull; Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

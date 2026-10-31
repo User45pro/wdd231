@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Student portrait placeholder">
+  <rect width="220" height="220" rx="8" fill="#e9edf3"/>
+  <circle cx="110" cy="85" r="40" fill="#27496d"/>
+  <path d="M40 200 Q40 135 110 135 Q180 135 180 200 Z" fill="#27496d"/>
+</svg>
