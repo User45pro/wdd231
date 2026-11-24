@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | William Borja</title>
+    <meta name="description" content="WDD 231 Course Home Page for William Borja showcasing web certificate courses.">
+    <meta name="author" content="William Borja">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span class="site-title">William Borja</span>
+        <button id="menu-button">&#9776;</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="final/">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="grid">
+            <section class="card">
+                <h3>About Me</h3>
+                <p>Hello! My name is William Borja and I live in Mexico. I am studying Software Development at BYU-Idaho through BYU-Pathway Worldwide. I also work helping other students reach their academic goals, and I teach English to Spanish speakers. I enjoy learning new technologies and finding ways to use them to serve others and provide for my family.</p>
+                <p>I have already completed courses in Python, databases, and web fundamentals, and this semester I am learning C# and frontend web development. My goal is to become a professional software developer.</p>
+            </section>
+            <section class="card">
+                <h3>Student Photo</h3>
+                <img src="images/profile.jpg" alt="William Borja student photo" width="200" height="200">
+            </section>
+        </div>
+
+        <section class="card courses">
+            <h3>Web Certificate Courses</h3>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-cards"></div>
+            <p class="credits-line">Total credits: <span id="total-credits"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | William Michel Borja Ornelas | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
