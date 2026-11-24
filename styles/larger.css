@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        background: transparent;
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    #nav-menu a {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    #course-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
