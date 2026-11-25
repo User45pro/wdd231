@@ -9,6 +9,7 @@
 
     nav {
         background: transparent;
+        width: auto;
     }
 
     #nav-menu {
@@ -21,6 +22,10 @@
         border-bottom: none;
         padding: 0.5rem 1rem;
         border-radius: 4px;
+    }
+
+    #nav-menu a:hover {
+        background-color: #1e354d;
     }
 
     .grid {

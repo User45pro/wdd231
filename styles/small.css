@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f7f9fa;
@@ -15,6 +15,7 @@ header {
     color: #fff;
     padding: 1rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -22,6 +23,7 @@ header {
 header .site-title {
     font-size: 1.5rem;
     font-weight: bold;
+    margin: 0;
 }
 
 #menu-button {
@@ -35,6 +37,7 @@ header .site-title {
 
 nav {
     background-color: #2b4c6f;
+    width: 100%;
 }
 
 #nav-menu {
@@ -119,8 +122,8 @@ h2 {
     flex: 1;
     padding: 0.5rem 1rem;
     background-color: #eee;
-    border: 1px solid steelblue;
-    color: steelblue;
+    border: 1px solid #2b4c6f;
+    color: #2b4c6f;
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
@@ -128,7 +131,7 @@ h2 {
 
 .filters button:hover,
 .filters button.active {
-    background-color: steelblue;
+    background-color: #2b4c6f;
     color: #fff;
 }
 
@@ -165,7 +168,7 @@ h2 {
 }
 
 footer {
-    background-color: steelblue;
+    background-color: #2b4c6f;
     color: #fff;
     text-align: center;
     padding: 1rem;

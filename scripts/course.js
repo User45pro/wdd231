@@ -13,7 +13,6 @@ const filterButtons = document.querySelectorAll(".filters button");
 
 function renderCourses(list) {
     container.textContent = "";
-    let credits = 0;
 
     list.forEach(course => {
         const div = document.createElement("div");
@@ -25,9 +24,9 @@ function renderCourses(list) {
             div.textContent = `${course.subject} ${course.number}`;
         }
         container.appendChild(div);
-        credits += course.credits;
     });
 
+    const credits = list.reduce((total, course) => total + course.credits, 0);
     totalCredits.textContent = credits;
 }
 
