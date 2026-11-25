@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="pueblaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002B49"/>
+      <stop offset="100%" stop-color="#0B69A3"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="url(#pueblaGrad)" stroke="#D97706" stroke-width="3"/>
+  <!-- Puebla Cathedral stylized towers -->
+  <rect x="26" y="38" width="10" height="34" fill="#FFFFFF" rx="1"/>
+  <polygon points="26,38 31,24 36,38" fill="#D97706"/>
+  <rect x="64" y="38" width="10" height="34" fill="#FFFFFF" rx="1"/>
+  <polygon points="64,38 69,24 74,38" fill="#D97706"/>
+  <!-- Central Dome -->
+  <path d="M40 72 L40 50 Q50 36 60 50 L60 72 Z" fill="#E2E8F0"/>
+  <path d="M46 45 Q50 38 54 45 Z" fill="#D97706"/>
+  <circle cx="50" cy="35" r="3" fill="#D97706"/>
+  <!-- Gear / Commerce accent -->
+  <circle cx="50" cy="58" r="6" fill="#002B49" stroke="#D97706" stroke-width="2"/>
+</svg>

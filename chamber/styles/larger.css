@@ -1,0 +1,99 @@
+/* Puebla Chamber of Commerce - Desktop / Larger Screens */
+
+@media (min-width: 768px) {
+  /* Navigation */
+  #menu-button {
+    display: none;
+  }
+
+  .header-container {
+    padding: 0.5rem 0;
+  }
+
+  nav {
+    background-color: #152e56;
+  }
+
+  #nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.25rem 0;
+  }
+
+  #nav-menu li a {
+    border-bottom: none;
+    border-radius: 4px;
+    padding: 0.5rem 0.85rem;
+  }
+
+  /* Header flex with nav inside */
+  header .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* W02 Directory Grid */
+  #members-container.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #members-container.list-view .member-card {
+    grid-template-columns: 2fr 2fr 1.5fr 1fr 1fr;
+    align-items: center;
+  }
+
+  /* W03 Home Grid */
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .spotlights-section {
+    grid-column: span 2;
+  }
+
+  .spotlights-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-section img {
+    height: 380px;
+  }
+
+  .hero-cta {
+    left: 2rem;
+    right: auto;
+    max-width: 380px;
+    text-align: left;
+  }
+
+  /* W04 Join Layout */
+  .join-container {
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+  }
+
+  /* W05 Discover Layout */
+  .demographics-bar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer Layout */
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-info {
+    text-align: right;
+  }
+}
