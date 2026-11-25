@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puebla Chamber of Commerce | Business Directory</title>
+  <meta name="description" content="Explore certified local businesses, commercial services, and active partners of the Puebla Chamber of Commerce.">
+  <meta name="author" content="William Borja">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Puebla Chamber of Commerce | Business Directory">
+  <meta property="og:description" content="Explore certified local businesses and partners of the Puebla Chamber of Commerce.">
+  <meta property="og:image" content="https://user45pro.github.io/wdd231/chamber/images/chamber-og.png">
+  <meta property="og:url" content="https://user45pro.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="branding">
+        <img src="images/chamber-logo.svg" alt="Puebla Chamber of Commerce Logo">
+        <div>
+          <h1>Puebla Chamber of Commerce</h1>
+          <span>Cámara de Comercio y Servicios Turísticos</span>
+        </div>
+      </div>
+      <button id="menu-button">&#9776;</button>
+    </div>
+  </header>
+
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="page-title">Member Business Directory</h2>
+
+    <div class="view-toggle">
+      <button id="grid-btn" class="view-btn active">Grid View</button>
+      <button id="list-btn" class="view-btn">List View</button>
+    </div>
+
+    <div id="members-container" class="grid-view">
+      <!-- Member cards populated dynamically with directory.js -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <h3>Puebla Chamber of Commerce</h3>
+        <p>Av. Don Juan de Palafox y Mendoza 14</p>
+        <p>Centro Histórico, Puebla, Pue. 72000</p>
+        <p>Email: info@pueblachamber.org.mx | Phone: +52 (222) 232-0000</p>
+      </div>
+      <div class="footer-info">
+        <p>WDD 231 Class Project</p>
+        <p>William Borja | BYU-Pathway Worldwide</p>
+        <p>&copy; <span id="currentyear"></span> Puebla Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

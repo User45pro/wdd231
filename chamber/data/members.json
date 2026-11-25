@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Talavera de la Luz",
+    "address": "Calle 4 Poniente 310, Centro Histórico, Puebla, Pue.",
+    "phone": "+52 (222) 246-8910",
+    "website": "https://talaveradelaluz.com.mx",
+    "image": "images/talavera-luz.webp",
+    "membershipLevel": 3,
+    "category": "Artisanal Crafts & Heritage",
+    "description": "Certified authentic Talavera pottery workshop creating traditional handmade ceramics since 1984."
+  },
+  {
+    "name": "Angelópolis Tech Solutions",
+    "address": "Blvd. Atlixcáyotl 1499, Reserva Territorial Atlixcáyotl, Puebla, Pue.",
+    "phone": "+52 (222) 303-4500",
+    "website": "https://angelopolistech.mx",
+    "image": "images/angelopolis-tech.webp",
+    "membershipLevel": 3,
+    "category": "Technology & Software",
+    "description": "Full-cycle cloud computing, cybersecurity, and enterprise software engineering partner."
+  },
+  {
+    "name": "Café Punta del Cielo Angelópolis",
+    "address": "Av. Osa Mayor 2902, Corredor Comercial Desarrollo Atlixcáyotl, Puebla, Pue.",
+    "phone": "+52 (222) 225-1178",
+    "website": "https://puntadelcielo.com.mx",
+    "image": "images/punta-cielo.webp",
+    "membershipLevel": 2,
+    "category": "Gastronomy & Coffee",
+    "description": "Premium 100% Mexican gourmet coffee roasters supporting local smallholder farmers."
+  },
+  {
+    "name": "Hotel Boutique Casareyna",
+    "address": "Privada 2 Oriente 1007, Antiguo Barrio de la Luz, Puebla, Pue.",
+    "phone": "+52 (222) 232-0032",
+    "website": "https://casareyna.com",
+    "image": "images/hotel-casareyna.webp",
+    "membershipLevel": 3,
+    "category": "Hospitality & Tourism",
+    "description": "Award-winning boutique hotel and authentic Poblano gourmet dining in historic 17th-century architecture."
+  },
+  {
+    "name": "BioLab Diagnóstica Puebla",
+    "address": "Av. Juárez 2108, La Paz, Puebla, Pue.",
+    "phone": "+52 (222) 248-7711",
+    "website": "https://biolabpuebla.com.mx",
+    "image": "images/biolab-diagnostica.webp",
+    "membershipLevel": 2,
+    "category": "Healthcare & Diagnostics",
+    "description": "ISO-certified clinical laboratory delivering precise diagnostic services for companies and families."
+  },
+  {
+    "name": "Jurídico Poblano Asociados",
+    "address": "Calle 11 Sur 3105, Chulavista, Puebla, Pue.",
+    "phone": "+52 (222) 243-5566",
+    "website": "https://juridicopoblano.mx",
+    "image": "images/juridico-poblano.webp",
+    "membershipLevel": 1,
+    "category": "Legal & Corporate Consulting",
+    "description": "Corporate law, contract arbitration, and commercial compliance attorneys for Puebla businesses."
+  },
+  {
+    "name": "Logística del Altiplano",
+    "address": "Autopista México-Puebla Km 116, Parque Industrial FINSA, Cuautlancingo, Pue.",
+    "phone": "+52 (222) 223-9900",
+    "website": "https://logisticaaltiplano.com.mx",
+    "image": "images/logistica-altiplano.webp",
+    "membershipLevel": 1,
+    "category": "Logistics & Supply Chain",
+    "description": "Specialized freight forwarding, warehousing, and customs clearance connecting central Mexico."
+  },
+  {
+    "name": "SolarTech Puebla",
+    "address": "Circuito Juan Pablo II 2715, Las Hadas, Puebla, Pue.",
+    "phone": "+52 (222) 211-3444",
+    "website": "https://solartechpuebla.mx",
+    "image": "images/solartech-puebla.webp",
+    "membershipLevel": 2,
+    "category": "Renewable Energy",
+    "description": "Commercial and residential solar power installations reducing carbon footprints across Puebla."
+  }
+]
