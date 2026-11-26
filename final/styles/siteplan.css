@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #FAF7F2;
+  color: #222222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1B3B6F;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 24px 16px;
+  border-bottom: 5px solid #7C2D12;
+}
+
+header h1 {
+  font-family: "Merriweather", Georgia, serif;
+  margin: 0 0 6px;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin: 0;
+  color: #FAF7F2;
+  font-size: 0.95rem;
+}
+
+main {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.plan-card {
+  background-color: #FFFFFF;
+  border: 1px solid #1B3B6F;
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Merriweather", Georgia, serif;
+  color: #1B3B6F;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
