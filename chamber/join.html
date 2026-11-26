@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puebla Chamber of Commerce | Join</title>
+  <meta name="description" content="Apply for membership with the Puebla Chamber of Commerce. Choose from Non-Profit, Bronze, Silver, or Gold tier benefits.">
+  <meta name="author" content="William Borja">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Puebla Chamber of Commerce | Join">
+  <meta property="og:description" content="Become an active member of the Puebla Chamber of Commerce.">
+  <meta property="og:image" content="https://user45pro.github.io/wdd231/chamber/images/chamber-og.png">
+  <meta property="og:url" content="https://user45pro.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="branding">
+        <img src="images/chamber-logo.svg" alt="Puebla Chamber of Commerce Logo">
+        <div>
+          <h1>Puebla Chamber of Commerce</h1>
+          <span>Cámara de Comercio y Servicios Turísticos</span>
+        </div>
+      </div>
+      <button id="menu-button">&#9776;</button>
+    </div>
+  </header>
+
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="page-title">Chamber Membership Application</h2>
+
+    <div class="join-container">
+      <section class="join-form-section">
+        <h2>Applicant Information</h2>
+        <form method="get" action="thankyou.html">
+          <div class="form-group">
+            <label>First Name *
+              <input type="text" id="fname" name="fname" required autocomplete="given-name" title="Enter your first name">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Last Name *
+              <input type="text" id="lname" name="lname" required autocomplete="family-name" title="Enter your last name">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Organizational Title
+              <input type="text" id="title" name="title" autocomplete="organization-title" pattern="[a-zA-Z -]{7,}" title="Minimum 7 letters, hyphens, and spaces only" placeholder="e.g. Commercial Manager">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Email Address *
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com" title="Enter a valid email address">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Mobile Phone Number *
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your phone number">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Business or Organization Name *
+              <input type="text" id="organization" name="organization" required autocomplete="organization" title="Enter your business name">
+            </label>
+          </div>
+
+          <fieldset class="radio-group">
+            <legend>Membership Level *</legend>
+            <label class="radio-option">
+              <input type="radio" name="membership" value="np" required>
+              NP Membership (Non-Profit Organizations - No Fee)
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="membership" value="bronze">
+              Bronze Membership
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="membership" value="silver">
+              Silver Membership
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="membership" value="gold">
+              Gold Membership
+            </label>
+          </fieldset>
+
+          <div class="form-group">
+            <label>Organization Description
+              <textarea id="description" name="description" rows="4" title="Describe your business or organization" placeholder="Briefly describe your products, services, or organization purpose..."></textarea>
+            </label>
+          </div>
+
+          <input type="hidden" id="timestamp" name="timestamp">
+
+          <input type="submit" value="Submit Application" class="submit-btn">
+        </form>
+      </section>
+
+      <section class="levels-section">
+        <h2>Membership Tiers &amp; Benefits</h2>
+
+        <div class="level-card">
+          <h3>NP Membership</h3>
+          <p>Designed for non-profit foundations, charities, and community educational initiatives.</p>
+          <button type="button" class="modal-btn" data-modal="modal-np">View Benefits</button>
+        </div>
+
+        <div class="level-card">
+          <h3>Bronze Membership</h3>
+          <p>Ideal for local startups, independent artisans, and emerging businesses in Puebla.</p>
+          <button type="button" class="modal-btn" data-modal="modal-bronze">View Benefits</button>
+        </div>
+
+        <div class="level-card">
+          <h3>Silver Membership</h3>
+          <p>For growing enterprises seeking active networking, marketing reach, and event discounts.</p>
+          <button type="button" class="modal-btn" data-modal="modal-silver">View Benefits</button>
+        </div>
+
+        <div class="level-card">
+          <h3>Gold Membership</h3>
+          <p>Premium access with featured home page spotlights, VIP networking, and committee leadership.</p>
+          <button type="button" class="modal-btn" data-modal="modal-gold">View Benefits</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="modal-np">
+    <h3>Non-Profit Membership Benefits</h3>
+    <p>We are proud to support community leaders and public service initiatives across Puebla.</p>
+    <ul>
+      <li>Free directory listing in our member index</li>
+      <li>Access to monthly community roundtables</li>
+      <li>Volunteer matching with local business sponsors</li>
+      <li>Complimentary event registration for staff</li>
+    </ul>
+    <button type="button" class="modal-close-btn">Close</button>
+  </dialog>
+
+  <dialog id="modal-bronze">
+    <h3>Bronze Membership Benefits</h3>
+    <p>Start connecting your commercial venture with local suppliers and customers.</p>
+    <ul>
+      <li>Standard business directory listing with website link</li>
+      <li>Monthly newsletter business feature</li>
+      <li>Invitations to member networking mixers</li>
+      <li>10% discount on business expo booth rentals</li>
+    </ul>
+    <button type="button" class="modal-close-btn">Close</button>
+  </dialog>
+
+  <dialog id="modal-silver">
+    <h3>Silver Membership Benefits</h3>
+    <p>Accelerate your growth with targeted advertising and professional development.</p>
+    <ul>
+      <li>Enhanced directory listing with logo and company bio</li>
+      <li>Eligibility for homepage member spotlight rotation</li>
+      <li>25% discount on Chamber expo booths and training workshops</li>
+      <li>Access to commercial legal advisory and compliance guides</li>
+    </ul>
+    <button type="button" class="modal-close-btn">Close</button>
+  </dialog>
+
+  <dialog id="modal-gold">
+    <h3>Gold Membership Benefits</h3>
+    <p>Maximum brand prestige, executive influence, and leadership opportunities.</p>
+    <ul>
+      <li>Priority placement on directory and featured homepage spotlight</li>
+      <li>VIP seating at all annual conferences and galas</li>
+      <li>Full access to executive networking sessions with municipal leaders</li>
+      <li>Free expo booth at the annual Puebla Business Expo</li>
+    </ul>
+    <button type="button" class="modal-close-btn">Close</button>
+  </dialog>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <h3>Puebla Chamber of Commerce</h3>
+        <p>Av. Don Juan de Palafox y Mendoza 14</p>
+        <p>Centro Histórico, Puebla, Pue. 72000</p>
+        <p>Email: info@pueblachamber.org.mx | Phone: +52 (222) 232-0000</p>
+      </div>
+      <div class="footer-info">
+        <p>WDD 231 Class Project</p>
+        <p>William Borja | BYU-Pathway Worldwide</p>
+        <p>&copy; <span id="currentyear"></span> Puebla Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
